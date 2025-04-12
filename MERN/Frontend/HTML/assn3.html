@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <th>CustID</th>
+        <th colspan="2">CustName</th>
+        <!-- <th>DOB</th> -->
+        <th>Age</th>
+      </tr>
+
+      <tr>
+        <td>01</td>
+        <td>Ujjawal</td>
+        <td>09-09-2002</td>
+        <td>22</td>
+      </tr>
+
+      <tr>
+        <td>02</td>
+        <td>Rohit</td>
+        <td>09-09-2003</td>
+        <td>21</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">03</td>
+        <td>Akash</td>
+        <td>11-09-2002</td>
+        <td>22</td>
+      </tr>
+
+      <tr>
+        <!-- <td>04</td> -->
+        <td>Kunal</td>
+        <td rowspan="2" colspan="2">09-12-2004</td>
+        <!-- <td>20</td> -->
+      </tr>
+
+      <tr>
+        <td colspan="2">05</td>
+        <!-- <td>Anshul</td> -->
+        <!-- <td>25-09-2001</td>
+        <td>23</td> -->
+      </tr>
+    </table>
+  </body>
+</html>
