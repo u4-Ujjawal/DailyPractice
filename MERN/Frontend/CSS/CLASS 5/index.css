@@ -1,0 +1,32 @@
+body {
+}
+
+.Main {
+  background-color: rgb(244, 200, 207);
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 20px;
+  /* padding-left: 30%; */
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  display: inline-block;
+  width: 150px;
+}
+
+.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* label {
+  align-items: start;
+}
+
+input {
+  float: right;
+} */

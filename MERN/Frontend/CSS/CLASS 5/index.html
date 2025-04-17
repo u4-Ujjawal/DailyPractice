@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="Main">
+      <div class="head">
+        <h1>STUDENT REGISTRATION FORM</h1>
+      </div>
+
+      <div>
+        <label class="one" for="rollno."
+          >Roll no :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+        >
+        <input type="number" name="rollno." id="rollno." />
+      </div>
+      <br />
+      <div>
+        <label class="one" for="sname"
+          >Student name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+        >
+        <input type="text" name="sname" id="sname" placeholder="First name" />
+        <span>-</span>
+        <input type="text" name="sname" id="sname" placeholder="Last name" />
+      </div>
+      <br />
+      <div>
+        <label class="one" for="fname"
+          >Father's Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+        >
+        <input type="text" name="fname" id="fname" />
+      </div>
+      <br />
+      <div>
+        <label class="one" for="dob">Date of Birth &nbsp;&nbsp;&nbsp;:</label>
+        <input type="datetime" name="dob" id="dob" />
+      </div>
+      <br />
+      <div>
+        <label class="one" for="Mno">Mobile no :&nbsp;&nbsp;&nbsp;</label>
+        <select name="Mno" id="Mno">
+          <option selected value="">+91</option>
+          <option value="">-91</option>
+          <option value="">-01</option>
+          <option value="">+64</option>
+          <option value="">+42</option>
+        </select>
+        <input
+          type="number"
+          name="Mno"
+          id="Mno"
+          minlength="10"
+          maxlength="10"
+        />
+      </div>
+
+      <br />
+      <div>
+        <label class="one" for="email">Email :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <br />
+      <div>
+        <label class="one" for="pass">Password : &nbsp;&nbsp;&nbsp;</label>
+        <input type="password" name="pass" id="pass" />
+      </div>
+      <br />
+      <div>
+        <label class="one" for="gen">Gender : &nbsp;&nbsp;&nbsp;</label>
+        <input type="radio" name="gen" id="Male" />
+        <label for="Male">Male</label>
+        <input type="radio" name="gen" id="FeMale" />
+        <label for="FeMale">Female</label>
+      </div>
+      <br />
+      <div>
+        <label class="one" for="dep"
+          >Department : &nbsp;&nbsp;&nbsp;&nbsp;</label
+        >
+        <input type="checkbox" name="dep" id="cs" />
+        <label for="cs">CS</label>
+        <input type="checkbox" name="dep" id="ece" />
+        <label for="ece">EEC</label>
+        <input type="checkbox" name="dep" id="it" />
+        <label for="it">IT</label>
+      </div>
+      <br />
+      <div>
+        <label class="one" for="course">Course : &nbsp;&nbsp;&nbsp;</label>
+        <select name="course" id="course">
+          <option selected disabled value="">Select your course</option>
+          <option value="">ABC</option>
+          <option value="">BCD</option>
+          <option value="">CDF</option>
+        </select>
+      </div>
+      <br />
+      <div class="two">
+        <input type="button" value="Register" />
+      </div>
+    </div>
+  </body>
+</html>
