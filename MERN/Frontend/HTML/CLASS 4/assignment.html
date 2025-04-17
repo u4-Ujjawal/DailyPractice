@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <div>
+      <label for="fname">First Name</label>
+      <input type="text" name="fname" id="fname" placeholder="" />
+
+      <label for="Mname">Middle Name</label>
+      <input type="text" name="Mname" id="Mname" placeholder="Kumar" />
+
+      <label for="Lname">Last Name</label>
+      <input type="text" name="Lname" id="Lname" placeholder="" />
+    </div>
+    <br />
+    <div>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" />
+
+      <label for="email">EMail</label>
+      <input type="email" name="email" id="email" />
+    </div>
+    <br />
+    <div>
+      <label for="dob">DOB</label>
+      <input
+        type="date"
+        name="dob"
+        id="dob"
+        min="04/14/2025"
+        max="01/01/1998"
+      />
+    </div>
+    <br />
+    <div>
+      <label for="passout">Year of passout</label>
+      <br />
+      <input type="radio" name="passout" id="2024" />
+      <label for="2024">2024</label>
+      <input type="radio" name="passout" id="2025" checked />
+      <label for="2025">2025</label>
+
+      <label for="stream">&nbsp;&nbsp;&nbsp;&nbsp; Stream Name</label>
+      <input type="text" name="stream" id="stream" />
+    </div>
+    <br />
+    <div>
+      <label for="resume">Upload resume</label>
+      <input type="file" name="resume" id="resume" required />
+
+      <label for="techstack">Choose techstack</label>
+      <input type="dropdown" name="techstack" id="techstack" />
+    </div>
+  </body>
+</html>
