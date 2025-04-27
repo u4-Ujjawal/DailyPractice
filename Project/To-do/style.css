@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  perspective: 1000px;
+}
+
+.app-container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 100%;
+  max-width: 480px;
+  transform-style: preserve-3d;
+  transform: rotateX(10deg) rotateY(-10deg);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4b0082;
+  text-shadow: 1px 1px 2px #b19cd9;
+}
+
+.task-completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background: linear-gradient(145deg, #f0f0f3, #cacde8);
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  transition: background 0.3s ease;
+}
+
+.task-item:hover {
+  background: linear-gradient(145deg, #d1d4e8, #f7f7fb);
+}
+
+.task-text {
+  flex-grow: 1;
+  margin-left: 12px;
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+.filter-btns .btn {
+  margin-right: 8px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.filter-btns .btn.active,
+.filter-btns .btn:hover {
+  background-color: #764ba2;
+  color: white;
+  box-shadow: inset 3px 3px 6px #5a3a7a, inset -3px -3px 6px #8e6cc3;
+}
+
+#addTaskBtn {
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+  transition: all 0.3s ease;
+}
+
+#addTaskBtn:hover {
+  background-color: #764ba2;
+  border-color: #764ba2;
+  color: white;
+  box-shadow: inset 3px 3px 6px #5a3a7a, inset -3px -3px 6px #8e6cc3;
+}
+
+#taskInput {
+  border-radius: 30px;
+  box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff;
+  font-size: 1.1rem;
+  padding-left: 20px;
+}
+
+button.btn-danger {
+  border-radius: 20px;
+  box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+  transition: all 0.3s ease;
+}
+
+button.btn-danger:hover {
+  background-color: #b22222;
+  box-shadow: inset 3px 3px 6px #7a1616, inset -3px -3px 6px #d94a4a;
+}
